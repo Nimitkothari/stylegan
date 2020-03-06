@@ -34,7 +34,7 @@ if 1:
     tf_config     = {'rnd.np_random_seed': 1000}                                           # Options for tflib.init_tf().
 
     # Dataset.
-    desc += 'stylegan';     dataset = EasyDict(tfrecord_dir='NAME_OF_YOUR_DATASET_DIRECTORY', resolution=128); train.mirror_augment = False
+    desc += 'stylegan';     dataset = EasyDict(tfrecord_dir='stylegan', resolution=128); train.mirror_augment = False
     #desc += '-ffhq';     dataset = EasyDict(tfrecord_dir='ffhq');                 train.mirror_augment = True
     #desc += '-ffhq512';  dataset = EasyDict(tfrecord_dir='ffhq', resolution=512); train.mirror_augment = True
     #desc += '-ffhq256';  dataset = EasyDict(tfrecord_dir='ffhq', resolution=256); train.mirror_augment = True
